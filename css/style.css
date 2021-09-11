@@ -1,0 +1,264 @@
+*{   
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Josefin Sans', sans-serif;
+}
+header{
+width: 100%;
+height: 100vh;
+background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../images/ebooks/book6.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size:cover;
+}
+nav{
+width: 100%; height: 15vh;
+color:white; display: flex;
+justify-content: space-between;
+align-items: center;
+text-decoration: none;
+}
+nav ul li:hover{
+	background:red  top right no-repeat;
+	transition: all .5s ease;
+}
+.dropdown:hover{
+	background:red  top right no-repeat;
+	transition: all .5s ease;
+}
+nav.shrink{
+background-color: rgba(0,0,0,0.7);
+height: 15vh;
+padding-top: 0px;
+transition: all .9s ease;
+}
+nav.shrink.navbar-logo{
+font-size: 20px;
+padding: 30px 0px 0px 80px;
+color: @white;
+}
+nav.shrink>li>a {
+color: @white;
+font-size: 16px;
+font-family: @heading-text;
+padding-top:30px;
+}
+.logo{
+	padding-top: 50px;
+width: 25%;
+text-align : center;
+text-decoration: none;
+}
+nav:hover{
+background: rgba(0,0,0,0.4);
+transition: all .9s ease;
+}
+.aboutimg{
+width: 100%;
+height: 250px!important;
+}
+.navbar-nav{
+width: 40%;
+font-size: 20px;
+justify-content: space-around;
+}
+.btn {
+	font-size: 20px;
+  cursor: pointer;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  /*padding: 12px 16px;*/
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+section  .ls a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+	text-decoration: none;
+}
+/*.loginsignup a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+	text-decoration: none;
+}*/
+section .btnone{
+	background: #fff;
+	color: #000;
+}
+.btnone:hover{
+	background: #00b894;
+	color: white;
+}
+section .btntwo{
+	background: #fff;
+	color: #000;
+}
+.btntwo:hover{
+	background: #00b894;
+	color:white;
+}
+.aboutheader{
+width: 100%;
+height: 80vh;
+}
+main{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+}
+.welcom{
+	font-weight: 200; 
+	font-size: 35px; 
+	letter-spacing: 3px;
+	text-shadow: 1px 1px 2px black;
+}
+.read{
+	margin: 30px 0px 20px 0px;
+	font-size: 55px; 
+	font-weight: 700;
+	text-shadow: 2px 1px 5px black
+	text-transform: uppercase;
+}
+.book{
+	font-size: 25px; 
+	word-spacing: 2px;
+	margin-bottom: 30px;
+	text-shadow: 1px 1px 1px black;
+}
+.change_content:after{
+	content: '';
+	animation: changetext 8s infinite linear;
+	color: #EEC4B6;
+}
+@keyframes changetext{
+
+	0%{content: "Computer Science";}
+	20%{content: "Civil Engineering";}
+	40%{content: "Electrical Engineering";}
+	60%{content: "Mechnical Engineering";}
+	80%{content: "Mining Engineering";}
+	100%{content: "Information Technology";}
+}
+.body{
+	background-color:#edfafa;
+	padding-top:10px;
+	padding-bottom: 5px;
+}
+.card-img-top{
+	width: 277px;
+	height: 200px;
+	/*border-radius: 50%;*/
+}
+.card{
+  width: 250px;
+  box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.card{
+	position: relative;
+  width: 80%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.card:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.card1{
+  
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.card1{
+	position: relative;
+   width: 94%;
+}
+.cardbooks-img-top{
+	width: 100px;
+	height: 150px;
+	border-radius: 9%;
+}
+.cardbooks{
+  width: 100px;
+  box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-radius: 5%;
+}
+.cardbooks-title{
+	font-size: 18px;
+}
+.cardbooks{
+	position: relative;
+  width: 80%;
+}
+.stretched-link{
+	margin-bottom: 10px;
+}
+footer p{
+	margin-bottom: 0;
+}
